@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 20px;
+    padding: 20px;
+}
+
+h2 {
+    color: #e70000;
+    border-bottom: 2px solid #ff3c00;
+    padding-bottom: 10px;
+}
+
+ol {
+    list-style-type: decimal;
+    margin-left: 20px;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 40px;
+}
+
+li {
+    margin-bottom: 5px;
+}

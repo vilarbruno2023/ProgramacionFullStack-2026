@@ -1,0 +1,46 @@
+/* Diferencia entre class e id:
+   - .class (clase): se usa para aplicar estilos a múltiples elementos; reutilizable.
+   - #id (identificador): único por página; destinado a un solo elemento.
+   Cuándo usar:
+   - Usa clases para estilos repetibles y componentes (p. ej. .boton, .tarjeta).
+   - Usa id solo cuando necesitas dirigirte a un elemento único (p. ej. #principal, anclas)
+
+/* 1) Selector por etiqueta: h2 (usa nombre de color) */
+h2 {
+  color: palevioletred; /* color usando nombre */
+  margin-bottom: 6px;
+}
+
+/* 2) Selector por clase: .destacado (usa RGB) */
+.destacado {
+  background-color: rgb(255, 249, 196); /* color de fondo con RGB */
+  color: rgb(102, 51, 0);
+  padding: 10px;
+  border-radius: 6px;
+}
+
+/* 3) Selector por clase para box: .box (usa hexadecimal) */
+.box {
+  background: #ffe6fe; /* color usando hexadecimal */
+  border: 1px solid #ffb6e1;
+  padding: 12px;
+  border-radius: 8px;
+  margin-top: 12px;
+}
+
+/* 4) Selector por id: #nota (usa RGBA) */
+#nota {
+  background-color: rgba(235, 37, 169, 0.08); /* color con transparencia (RGBA) */
+  color: rgba(15, 23, 42, 0.95);
+  padding: 8px;
+  margin-top: 12px;
+  border-left: 4px solid rgba(235, 37, 225, 0.6);
+}
+
+/* Estilo general para #principal (ejemplo de id único) */
+#principal {
+  max-width: 640px;
+  margin: 32px auto;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  padding: 18px;
+}
