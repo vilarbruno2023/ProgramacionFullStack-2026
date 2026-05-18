@@ -1,0 +1,33 @@
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.izq{
+  display: flex;
+  align-items: center;
+  flex: 1;
+  gap: 10px;
+}
+
+.search{
+  flex: 1;
+}
+
+.logo{
+  text-align: center;
+}
+
+.der{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.der img{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}

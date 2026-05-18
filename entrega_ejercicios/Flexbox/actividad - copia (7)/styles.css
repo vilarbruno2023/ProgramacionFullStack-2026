@@ -1,0 +1,15 @@
+.container{
+  display: flex;
+  align-items: center;
+}
+.logo{
+  justify-content: flex-start;
+}
+.nav{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+.button{
+  justify-content: flex-end;
+}

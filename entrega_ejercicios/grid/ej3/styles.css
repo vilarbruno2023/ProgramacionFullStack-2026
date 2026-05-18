@@ -1,0 +1,38 @@
+*{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    .caja{
+      display:grid;
+
+      width:100vw;
+      height:100vh;
+
+      grid-template-columns:repeat(4,1fr);
+      grid-template-rows:repeat(3,1fr);
+
+      gap:10px;
+
+      grid-template-areas:
+        "hero hero sidebar aside"
+        "hero hero sidebar aside"
+        "content content content aside";
+    }
+
+    .hero{
+      grid-area:hero;
+    }
+
+    .sidebar{
+      grid-area:sidebar;
+    }
+
+    .content{
+      grid-area:content;
+    }
+
+    .aside{
+      grid-area:aside;
+    }
