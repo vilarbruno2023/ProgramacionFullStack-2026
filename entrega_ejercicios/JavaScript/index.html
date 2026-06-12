@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang='es'>
+   <head>
+       <meta charset='UTF-8'>
+       <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+       <title>Prueba JavaScript</title>
+   </head>
+
+   <body>
+       <h1>Hola Mundo</h1>
+
+       <script>
+const ventas = [ { producto: "Labubu", precio: 6767, cantidad: 56, categoria: "JugeteDeluxe" },
+                 { producto: "MickeyMouse", precio: 9999, cantidad: 55, categoria: "JugeteDeluxe" },
+                 { producto: "HarryPotter", precio: 80, cantidad: 30, categoria: "Libros" },
+                 { producto: "1984", precio: 159, cantidad: 29, categoria: "Libros" },
+                 { producto: "LingoteOro", precio: 500000000, cantidad: 1, categoria: "Metales" },
+                 { producto: "BarraAluminio", precio: 1200, cantidad: 12, categoria: "Metales" }
+];
+
+const ventasCategoria = ventas.reduce((acc, venta) => {
+    const totalVenta = venta.precio * venta.cantidad;
+
+    acc[venta.categoria] = (acc[venta.categoria] || 0) + totalVenta;
+
+    return acc;
+}, {});
+
+console.log(ventasCategoria);
+
+const productoVendido = ventas.reduce((max, venta) =>
+    venta.cantidad > max.cantidad ? venta : max
+);
+
+console.log(productoVendido);
+
+const ventas1000 = ventas.filter(
+    venta => venta.precio * venta.cantidad > 1000
+);
+
+console.log(ventas1000);
+
+const ventasUnicas = ventas.filter(
+    venta => venta.cantidad === 1
+);
+
+console.log(ventasUnicas);
+
+const totalVentas = ventas.reduce(
+    (total, venta) => total + venta.precio * venta.cantidad,
+    0
+);
+
+const promedioVentas = totalVentas / ventas.length;
+
+console.log(promedioVentas);
+
+const productosOrdenados = [...ventas].sort(
+    (a, b) => b.precio - a.precio
+);
+
+console.log(productosOrdenados);
+       </script>
+   </body>
+</html>
